@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Кольори фону</title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: white;
+      transition: background-color 0.5s ease;
+    }
+
+    .color-button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1>Кольори фону</h1>
+
+<h2>Оберіть колір фону:</h2>
+<button class="color-button" onclick="changeBackgroundColor('red')">Червоний</button>
+<button class="color-button" onclick="changeBackgroundColor('yellow')">Жовтий</button>
+<button class="color-button" onclick="changeBackgroundColor('gray')">Сірий</button>
+
+<script>
+  function changeBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+</body>
+</html>
